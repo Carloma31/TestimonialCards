@@ -1,0 +1,65 @@
+#primeraImg,#segundaImg{
+    width:80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+#terceraImg{
+    width:140px;
+    height: 140px;
+    border-radius: 15px;
+}
+
+#primeraSeccion{
+    max-width: fit-content;
+}
+
+#perfil1 { 
+    display: flex;
+    align-items: center;
+    text-align: start;
+    max-width: 250px;
+    margin: 10px 30px;
+    gap:10px;
+}
+
+#info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 300px;
+
+    
+}
+#texto1 {
+    position: relative; 
+    left: 0; 
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+    max-width: 300px;
+    min-height: 100px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    z-index: 10; 
+    margin-top:10px;
+}
+
+#texto1::before {
+    content: "";
+    position: absolute;
+    background-color: black;
+    width: 10px;
+    height: 10px;
+    bottom: -5px;
+    left: 20%;
+    transform: rotate(45deg);
+}
+
+#perfil1:hover ~ #texto1 {
+    display: block;
+}
+
+h4, p {
+    margin: 0; 
+}
